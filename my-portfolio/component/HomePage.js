@@ -212,7 +212,7 @@ const HomePage = () => {
 			{/* footer  */}
 			<div className="w-full bg-[#0d2438] min-h-56 text-white text-xl flex items-center flex-col">
 				<div className="mt-4 text-4xl">Akash Yadav</div>
-				<div className="mt-4">This Portfolio has been designed by Using</div>
+				<div className="mt-4 text-center">This Portfolio has been designed by Using</div>
 				<div className="mt-4 text-center my-3">
 					Tailwind & Next.js for Frotend and Node.js, Express and MongoDB for
 					Backend.

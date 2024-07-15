@@ -59,21 +59,21 @@ const Contact = () => {
 					</div>
 					<div className="flex ml-2 xl:ml-12 mt-8">
 						<MdEmail size={35} color="gray" />
-						<span className="ml-8">akashyd11@gmail.com</span>
+						<span className="ml-8 text-sm xl:text-lg">akashyd11@gmail.com</span>
 					</div>
 					<div className="flex ml-2 xl:ml-12 mt-8">
 						<IoMdCall size={35} color="gray" />
-						<span className="ml-8">+91 8929992732</span>
+						<span className="ml-8 text-sm xl:text-lg">+91 8929992732</span>
 					</div>
 					<div className="flex ml-2 xl:ml-12 mt-4">
 						<FaSquareWhatsapp size={35} color="gray" />
-						<span className="ml-8">+91 8929992732 &nbsp;/ +91 9013009017</span>
+						<span className="ml-8 text-sm xl:text-lg">+91 8929992732 &nbsp;/ +91 9013009017</span>
 					</div>
 					<h1 className=" text-2xl p-2 ml-8 mt-8">Social Media</h1>
-					<div className="flex ml-2 xl:ml-12 mt-8">
+					<div className="flex ml-2 xl:ml-12 mt-8 items-center">
 						<FaSquareInstagram size={35} color="gray" />
 						<a
-							className="ml-8 hover:text-blue-500"
+							className="ml-4 text-[12px] xl:text-lg hover:text-blue-500 overflow-hidden"
 							target="_blank"
 							href="https://www.instagram.com/akash97.yadav/"
 						>
@@ -83,7 +83,7 @@ const Contact = () => {
 					<div className="flex ml-2 xl:ml-12 mt-8">
 						<BsTwitterX size={35} color="gray" />
 						<a
-							className="ml-8 hover:text-blue-500"
+							className="ml-8 hover:text-blue-500 text-sm xl:text-lg"
 							target="_blank"
 							href="https://x.com/Akash97yadav"
 						>

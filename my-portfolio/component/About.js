@@ -23,48 +23,92 @@ const About = () => {
 			<div className="flex xl:flex-row flex-col">
 				<div className="flex flex-col w-full xl:w-[50%]">
 					<div className="grid grid-flow-row grid-cols-10 px-4 py-4 ring-1 p-2 rounded-xl hover:ring-gray-800 ring-gray-300 duration-300 my-4">
-						<h2 className=" text-2xl col-span-10 xl:col-span-2 self-center">Frotent</h2>
+						<h2 className=" text-2xl col-span-10 xl:col-span-2 self-center my-4">
+							Frotend
+						</h2>
 						<p className="grid grid-flow-row grid-cols-5 col-span-8 gap-5">
-							<RiNextjsFill size={65} />
-							<RiReactjsFill size={65} color="#6fc1f4" />
-							<TiHtml5 size={75} color="red" />
-							<FaCss3 size={65} color="blue" />
-							<DiJqueryLogo size={65} color="#6fc1f4" />
+							{/* <RiNextjsFill size={25} /> */}
+							<RiNextjsFill className="w-8 h-8 sm:w-8 sm:h-8 md:w-10 md:h-10 xl:w-14 xl:h-14" />
+
+							<RiReactjsFill
+								className="w-8 h-8 sm:w-8 sm:h-8 md:w-10 md:h-10 xl:w-14 xl:h-14"
+								color="#6fc1f4"
+							/>
+							<TiHtml5
+								className="w-8 h-8 sm:w-8 sm:h-8 md:w-10 md:h-10 xl:w-14 xl:h-14"
+								color="red"
+							/>
+							<FaCss3
+								className="w-8 h-8 sm:w-8 sm:h-8 md:w-10 md:h-10 xl:w-14 xl:h-14"
+								color="blue"
+							/>
+							<DiJqueryLogo
+								className="w-8 h-8 sm:w-8 sm:h-8 md:w-10 md:h-10 xl:w-14 xl:h-14"
+								color="#6fc1f4"
+							/>
 						</p>
-						<h2 className=" text-2xl col-span-10 xl:col-span-2 self-center">Backend</h2>
+						<h2 className=" text-2xl col-span-10 xl:col-span-2 self-center my-4">
+							Backend
+						</h2>
 						<p className="grid grid-flow-row grid-cols-4 col-span-10 xl:col-span-8 gap-5 my-4">
-							<DiNodejs size={95} color="black" />
-							<SiExpress size={75} />
+							<DiNodejs
+								className="w-8 h-8 sm:w-8 sm:h-8 md:w-10 md:h-10 xl:w-14 xl:h-14"
+								color="black"
+							/>
+							<SiExpress className="w-8 h-8 sm:w-8 sm:h-8 md:w-10 md:h-10 xl:w-14 xl:h-14" />
 						</p>
-						<h2 className=" text-2xl col-span-10 xl:col-span-2 self-center">Database</h2>
+						<h2 className=" text-2xl col-span-10 xl:col-span-2 self-center">
+							Database
+						</h2>
 						<p className="grid grid-flow-row grid-cols-4 col-span-8 gap-5 my-4">
-							<DiMongodb size={75} color="green" />
-							<SiMysql size={75} />
+							<DiMongodb
+								className="w-8 h-8 sm:w-8 sm:h-8 md:w-10 md:h-10 xl:w-14 xl:h-14"
+								color="green"
+							/>
+							<SiMysql className="w-8 h-8 sm:w-8 sm:h-8 md:w-10 md:h-10 xl:w-14 xl:h-14" />
 						</p>
-						<h2 className=" text-2xl col-span-10 xl:col-span-3 self-center">Miscellaneous</h2>
+						<h2 className=" text-2xl col-span-10 xl:col-span-3 self-center">
+							Miscellaneous
+						</h2>
 						<p className="grid grid-flow-row grid-cols-4 col-span-7 gap-5 my-4">
-							<SiSocketdotio size={65} />
-							<FaDocker size={75} color="#6fc1f4" />
-							<FaGitSquare size={75} color="#db4c1f" />
-							<FaAws size={75} />
+							<SiSocketdotio className="w-8 h-8 sm:w-8 sm:h-8 md:w-10 md:h-10 xl:w-14 xl:h-14" />
+							<FaDocker
+								className="w-8 h-8 sm:w-8 sm:h-8 md:w-10 md:h-10 xl:w-14 xl:h-14"
+								color="#6fc1f4"
+							/>
+							<FaGitSquare
+								className="w-8 h-8 sm:w-8 sm:h-8 md:w-10 md:h-10 xl:w-14 xl:h-14"
+								color="#db4c1f"
+							/>
+							<FaAws className="w-8 h-8 sm:w-8 sm:h-8 md:w-10 md:h-10 xl:w-14 xl:h-14" />
 						</p>
-						<h2 className=" text-2xl col-span-10 xl:col-span-3 self-center">Frameworks</h2>
+						<h2 className=" text-2xl col-span-10 xl:col-span-3 self-center">
+							Frameworks
+						</h2>
 						<p className="grid grid-flow-row grid-cols-3 col-span-7 gap-5 my-4">
-							<SiExpress size={75} />
-							<RiTailwindCssFill size={75} color="#6fc1f4" />
-							<FaBootstrap size={75} color="purple" />
+							<SiExpress className="w-8 h-8 sm:w-8 sm:h-8 md:w-10 md:h-10 xl:w-14 xl:h-14" />
+							<RiTailwindCssFill
+								className="w-8 h-8 sm:w-8 sm:h-8 md:w-10 md:h-10 xl:w-14 xl:h-14"
+								color="#6fc1f4"
+							/>
+							<FaBootstrap
+								className="w-8 h-8 sm:w-8 sm:h-8 md:w-10 md:h-10 xl:w-14 xl:h-14"
+								color="purple"
+							/>
 						</p>
 					</div>
 					<div className="grid grid-flow-row xl:grid-flow-col xl:grid-cols-10 px-4 ring-1 p-2 rounded-xl hover:ring-gray-800 ring-gray-300 duration-300">
-						<h2 className=" text-2xl col-span-10 xl:col-span-2 self-center justify-self-center mb-6 xl:mb-0">Hobbies</h2>
-						<p className="grid grid-flow-row grid-cols-2 col-span-8 gap-5">
-							<span className="text-lg bg-[#5ebaf3e4] text-white font-semibold rounded-xl p-2 px-1 text-center">
+						<h2 className=" text-2xl col-span-10 xl:col-span-2 self-center justify-self-center mb-6 xl:mb-0">
+							Hobbies
+						</h2>
+						<p className="grid grid-flow-row grid-cols-2 col-span-8 gap-2 xl:gap-5">
+							<span className="text-sm xl:text-lg col-span-2 xl:col-span-1 bg-[#5ebaf3e4] text-white xl:font-semibold rounded-xl p-2 px-2 text-center">
 								Photography
 							</span>
-							<span className="text-lg bg-[#5ebaf3e4] text-white font-semibold rounded-xl p-2 px-1 text-center">
+							<span className="text-sm xl:text-lg col-span-2 xl:col-span-1 bg-[#5ebaf3e4] text-white xl:font-semibold rounded-xl p-2 px-1 text-center">
 								Cycling
 							</span>
-							<span className="text-lg bg-[#5ebaf3e4] text-white font-semibold rounded-xl p-2 px-1 text-center">
+							<span className="text-sm xl:text-lg bg-[#5ebaf3e4] col-span-2 xl:col-span-1 text-white xl:font-semibold rounded-xl p-2 px-1 text-center">
 								Photo Editing
 							</span>
 						</p>
