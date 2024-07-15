@@ -17,6 +17,7 @@ import { FaSquareWhatsapp } from "react-icons/fa6";
 import Contact from "./Contact";
 import { BsTwitterX } from "react-icons/bs";
 import Header from "./Header";
+import Link from "next/link";
 
 const poppins = Poppins({
 	weight: ["300", "700"],
@@ -124,13 +125,23 @@ const HomePage = () => {
 							<p className="xl:self-end text-3xl my-5 dark:text-gray-50 text-gray-600">
 								& Korean Language Expert{" "}
 							</p>
-							<button className="ring-1 ring-gray-500 my-6 px-10 dark:bg-white dark:text-black hover:ring-blue-600 xl:self-end hover:bg-blue-600 duration-300 flex items-center p-3 text-gray-600 rounded-lg hover:text-white">
-								<RiDownloadCloudLine color="black" className="mr-4" size={30} />
-								Download CV
-							</button>
+							<a href="/akash-resume.pdf" download>
+								<button className="ring-1 ring-gray-500 my-6 px-10 dark:bg-white dark:text-black hover:ring-blue-600 xl:self-end hover:bg-blue-600 duration-300 flex items-center p-3 text-gray-600 rounded-lg hover:text-white">
+									<RiDownloadCloudLine
+										color="black"
+										className="mr-4"
+										size={30}
+									/>
+									Download CV
+								</button>
+							</a>
 							<div className="flex w-full justify-center xl:justify-end">
-								<FaGithub size={50} className="mx-4 cursor-pointer" />
-								<FaLinkedin size={50} className="mx-4 cursor-pointer" />
+								<Link href="https://github.com/Akashyadav1997">
+									<FaGithub size={50} className="mx-4 cursor-pointer" />
+								</Link>
+								<Link href="https://www.linkedin.com/in/akash-yadav-5b19a921a/">
+									<FaLinkedin size={50} className="mx-4 cursor-pointer" />
+								</Link>
 							</div>
 						</div>
 						<div className="xl:relative mb-72 xl:mb-1">
@@ -162,7 +173,11 @@ const HomePage = () => {
 						Search projects by there title
 					</div>
 					<div className="text-lg text-black z-10 absolute bottom-6 xl:bottom-12 sm:left-[9rem] xl:left-[16rem] flex flex-row justify-center items-center">
-						<CiSearch size={45} className=" mr-5" color={`${darkMode ? "white":"black"}`} />
+						<CiSearch
+							size={45}
+							className=" mr-5"
+							color={`${darkMode ? "white" : "black"}`}
+						/>
 						<input
 							type="text"
 							placeholder="Search Projects here"
@@ -171,7 +186,10 @@ const HomePage = () => {
 					</div>
 				</div>
 			</div>
-			<div className="flex flex-col items-center w-full dark:bg-[#0d2438] duration-1000" id="my-projects">
+			<div
+				className="flex flex-col items-center w-full dark:bg-[#0d2438] duration-1000"
+				id="my-projects"
+			>
 				<div className="grid xl:grid-cols-2 grid-cols-1 items-start gap-5 justify-items-center ">
 					{projectData.map((item, index) => (
 						<Projects key={index} data={item} />
@@ -184,7 +202,10 @@ const HomePage = () => {
 			>
 				<About />
 			</div>
-			<div className="md:w-full flex flex-col items-center py-12 duration-1000 dark:text-white dark:bg-[#0d2438]" id="contact">
+			<div
+				className="md:w-full flex flex-col items-center py-12 duration-1000 dark:text-white dark:bg-[#0d2438]"
+				id="contact"
+			>
 				<Contact />
 			</div>
 
@@ -198,10 +219,18 @@ const HomePage = () => {
 				</div>
 				<div className="flex my-4">
 					{" "}
-					<FaGithub size={40} className="mx-4 cursor-pointer" />
-					<FaLinkedin size={40} className="mx-4 cursor-pointer" />
-					<BsTwitterX size={40} className="mx-4 cursor-pointer" />
-					<FaSquareInstagram size={40} className="mx-4 cursor-pointer" />
+					<Link href="https://github.com/Akashyadav1997">
+						<FaGithub size={40} className="mx-4 cursor-pointer" />
+					</Link>
+					<Link href="https://www.linkedin.com/in/akash-yadav-5b19a921a/">
+						<FaLinkedin size={40} className="mx-4 cursor-pointer" />
+					</Link>
+					<Link href="https://x.com/Akash97yadav">
+						<BsTwitterX size={40} className="mx-4 cursor-pointer" />
+					</Link>
+					<Link href="https://www.instagram.com/akash97.yadav/">
+						<FaSquareInstagram size={40} className="mx-4 cursor-pointer" />
+					</Link>
 				</div>
 			</div>
 		</div>
