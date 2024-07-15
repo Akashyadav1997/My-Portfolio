@@ -10,8 +10,9 @@ const Header = ({ setShowModal, darkMode, setDarkMode }) => {
 				<span
 					className={`cursor-pointer text-sm xl:text-2xl xl:flex-row flex-col flex`}
 				>
-					<span>Akash</span>
-					<span>Yadav</span>
+					<span className="font-bold">Akash</span>
+					
+					<span className="font-bold">Yadav</span>
 				</span>
 				{/* routes */}
 				<div className="md:grid grid-flow-col space-x-8 mt-4 hidden ">

@@ -122,7 +122,7 @@ const HomePage = () => {
 							<p className="self-center xl:self-end text-4xl mt-2 dark:text-gray-50 font-sans text-gray-900 text-center">
 								A MERN STACK DEVELOPER
 							</p>
-							<p className="xl:self-end text-3xl my-5 dark:text-gray-50 text-gray-600">
+							<p className="xl:self-end text-3xl my-5 text-center dark:text-gray-50 text-gray-600">
 								& Korean Language Expert{" "}
 							</p>
 							<a href="/akash-resume.pdf" download>
