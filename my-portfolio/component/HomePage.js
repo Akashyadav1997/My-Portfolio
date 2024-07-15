@@ -16,6 +16,7 @@ import About from "./About";
 import { FaSquareWhatsapp } from "react-icons/fa6";
 import Contact from "./Contact";
 import { BsTwitterX } from "react-icons/bs";
+import Header from "./Header";
 
 const poppins = Poppins({
 	weight: ["300", "700"],
@@ -26,6 +27,7 @@ const poppins = Poppins({
 const HomePage = () => {
 	const router = useRouter();
 	const [showModal, setShowModal] = useState(false);
+	const [darkMode, setDarkMode] = useState(false);
 	const [projectData, setProjectData] = useState([
 		{
 			name: "My First Project",
@@ -65,10 +67,12 @@ const HomePage = () => {
 		// },
 	]);
 	return (
-		<div className={`${poppins.className} w-full`}>
+		<div
+			className={`${poppins.className} w-full ${darkMode ? "dark" : "null"}`}
+		>
 			{showModal && (
 				<Modal setShowModal={setShowModal}>
-					<div className="flex flex-col w-[32rem]">
+					<div className="flex flex-col  xl:w-[32rem]">
 						<label className="p-5 text-xl self-center">
 							What Project are Looking for ?{" "}
 						</label>
@@ -101,76 +105,40 @@ const HomePage = () => {
 				</Modal>
 			)}
 			{/* <Header/> */}
-			<div className=" px-16 flex bg-[#0d2438] p-4 text-white justify-evenly items-center w-full">
-				{/* name */}
-				<span
-					className="cursor-pointer text-xl"
-					onClick={() => router.push("/")}
-				>
-					<span className="text-4xl text-blue-600 bg-white px-2 rounded-lg font-bold mx-2">
-						A
-					</span>
-					Akash Yadav
-				</span>
-				{/* routes */}
-				<div className="grid grid-flow-col space-x-8 mt-4">
-					<a href="#my-projects">
-						<span className=" hover:bg-blue-900 p-3 rounded-xl duration-300 cursor-pointer">
-							Projects
-						</span>
-					</a>
-					<a href="#about">
-						<span className=" hover:bg-blue-900 p-3 rounded-xl duration-300 cursor-pointer">
-							About Me
-						</span>
-					</a>
-					<a href="#contact">
-						<span className=" hover:bg-blue-900 p-3 rounded-xl duration-300 cursor-pointer">
-							Contact
-						</span>
-					</a>
-				</div>
-				<div className="flex items-center">
-					<button
-						className="bg-indigo-500 rounded-lg hover:bg-blue-600 duration-300 font-semibold p-3 px-4 mx-4"
-						onClick={() => setShowModal(true)}
-					>
-						Hire Me
-					</button>
-					<FiSun
-						className="bg-[#183b57] rounded-lg p-2 hover:bg-[#1c3143] cursor-pointer duration-300"
-						size={45}
-					/>
-				</div>
-			</div>
+			<Header
+				setShowModal={setShowModal}
+				darkMode={darkMode}
+				setDarkMode={setDarkMode}
+			/>
 			{/* body */}
-			<div className="w-full bg-[#fffefe] ">
+			<div className="w-full bg-[#fffefe] dark:bg-[#0d2438] dark:text-white duration-1000 ">
 				<div className="relative flex flex-col items-center">
-					<div className="flex w-full">
-						<div className="w-full flex flex-col items-center mt-32">
-							<h1 className=" self-end text-5xl my-2 font-semibold text-gray-600">
+					<div className="flex xl:flex-row flex-col w-full">
+						<div className="w-full flex flex-col items-center mt-32 xl:mb-2">
+							<h1 className="text-center self-center xl:self-end text-5xl my-2 font-semibold dark:text-gray-100 text-gray-600">
 								HI, I AM AKASH YADAV
 							</h1>
-							<p className="self-end text-4xl mt-2 font-sans text-gray-900">
+							<p className="self-center xl:self-end text-4xl mt-2 dark:text-gray-50 font-sans text-gray-900 text-center">
 								A MERN STACK DEVELOPER
 							</p>
-							<p className="self-end text-3xl my-5 text-gray-600">
+							<p className="xl:self-end text-3xl my-5 dark:text-gray-50 text-gray-600">
 								& Korean Language Expert{" "}
 							</p>
-							<button className="ring-1  ring-gray-500 my-6 px-10 hover:ring-blue-600 self-end hover:bg-blue-600 duration-300 flex items-center p-3 text-gray-600 rounded-lg hover:text-white">
+							<button className="ring-1 ring-gray-500 my-6 px-10 dark:bg-white dark:text-black hover:ring-blue-600 xl:self-end hover:bg-blue-600 duration-300 flex items-center p-3 text-gray-600 rounded-lg hover:text-white">
 								<RiDownloadCloudLine color="black" className="mr-4" size={30} />
 								Download CV
 							</button>
-							<div className="flex w-full justify-end">
+							<div className="flex w-full justify-center xl:justify-end">
 								<FaGithub size={50} className="mx-4 cursor-pointer" />
 								<FaLinkedin size={50} className="mx-4 cursor-pointer" />
 							</div>
 						</div>
-						<div className="relative">
+						<div className="xl:relative mb-72 xl:mb-1">
 							<svg
 								viewBox="10 30 200 200"
 								xmlns="http://www.w3.org/2000/svg"
 								style={{ width: "1000px", height: "1000px" }}
+								className="hidden xl:block"
 							>
 								<path
 									fill="#FF0066"
@@ -180,21 +148,21 @@ const HomePage = () => {
 							</svg>
 							<Image
 								src="/akash-old.png"
-								className="z-10 top-16 ml-20 absolute rounded-3xl"
+								className="z-10 top-16 xl:ml-20 xl:absolute block rounded-3xl"
 								width={550}
 								height={550}
 								alt="Not Available"
 							/>
 						</div>
 					</div>
-					<div className="text-7xl text-black absolute bottom-44">
+					<div className="text-7xl dark:text-white text-black absolute bottom-44">
 						Portfolio
 					</div>
-					<div className="text-3xl text-black absolute bottom-28">
+					<div className="text-3xl dark:text-white text-black absolute text-center bottom-24  md:bottom-28">
 						Search projects by there title
 					</div>
-					<div className="text-lg text-black z-10 absolute bottom-12 left-[16rem] flex flex-row justify-center items-center">
-						<CiSearch size={45} className=" mr-5" />
+					<div className="text-lg text-black z-10 absolute bottom-6 xl:bottom-12 sm:left-[9rem] xl:left-[16rem] flex flex-row justify-center items-center">
+						<CiSearch size={45} className=" mr-5" color={`${darkMode ? "white":"black"}`} />
 						<input
 							type="text"
 							placeholder="Search Projects here"
@@ -203,7 +171,7 @@ const HomePage = () => {
 					</div>
 				</div>
 			</div>
-			<div className="flex flex-col items-center w-full" id="my-projects">
+			<div className="flex flex-col items-center w-full dark:bg-[#0d2438] duration-1000" id="my-projects">
 				<div className="grid xl:grid-cols-2 grid-cols-1 items-start gap-5 justify-items-center ">
 					{projectData.map((item, index) => (
 						<Projects key={index} data={item} />
@@ -211,18 +179,20 @@ const HomePage = () => {
 				</div>
 			</div>
 			<div
-				className="w-full flex flex-col mt-12 px-12 shadow-2xl py-4 pb-12 rounded-xl"
+				className="w-full flex flex-col pt-12 px-12 shadow-2xl py-4 pb-12 rounded-xl duration-1000 dark:rounded-none dark:text-white dark:bg-[#0d2438]"
 				id="about"
 			>
 				<About />
 			</div>
-			<div className="w-full flex flex-col items-center my-12" id="contact">
+			<div className="md:w-full flex flex-col items-center py-12 duration-1000 dark:text-white dark:bg-[#0d2438]" id="contact">
 				<Contact />
 			</div>
+
+			{/* footer  */}
 			<div className="w-full bg-[#0d2438] min-h-56 text-white text-xl flex items-center flex-col">
 				<div className="mt-4 text-4xl">Akash Yadav</div>
 				<div className="mt-4">This Portfolio has been designed by Using</div>
-				<div className="mt-4">
+				<div className="mt-4 text-center my-3">
 					Tailwind & Next.js for Frotend and Node.js, Express and MongoDB for
 					Backend.
 				</div>

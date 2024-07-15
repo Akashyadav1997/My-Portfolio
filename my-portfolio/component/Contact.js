@@ -8,8 +8,8 @@ const Contact = () => {
 	return (
 		<>
 			<h1 className="text-6xl">Contact Us</h1>
-			<div className="grid grid-flow-col grid-cols-2 w-full mt-8">
-				<div className="shadow-2xl w-4/5 flex flex-col items-end justify-self-end rounded-xl">
+			<div className="grid xl:grid-flow-col  xl:grid-cols-2 w-full mt-8">
+				<div className="shadow-2xl dark:shadow-white dark:bg-[#595757] w-4/5 flex flex-col items-center xl:items-end justify-self-center xl:justify-self-end rounded-xl">
 					<h1 className="my-4 text-2xl self-center">Contact Form</h1>
 					<div className="flex flex-col items-start w-4/5 my-2">
 						<label className="mr-20">Name</label>
@@ -49,28 +49,28 @@ const Contact = () => {
 						</button>
 					</div>
 				</div>
-				<div className="flex flex-col items-start">
+				<div className="flex flex-col xl:items-start mt-12">
 					<h1 className=" text-2xl p-2 ml-8">Contact Details</h1>
-					<div className="flex ml-12 mt-8">
+					<div className="flex ml-2 xl:ml-12 mt-8">
 						<FaLocationDot color="gray" size={35} />
-						<span className="ml-8 ">
+						<span className="ml-2 xl:ml-8 overflow-auto ">
 							Ghitorni Enclave, New Delhi, India &nbsp; PinCode : 110030
 						</span>
 					</div>
-					<div className="flex ml-12 mt-8">
+					<div className="flex ml-2 xl:ml-12 mt-8">
 						<MdEmail size={35} color="gray" />
 						<span className="ml-8">akashyd11@gmail.com</span>
 					</div>
-					<div className="flex ml-12 mt-8">
+					<div className="flex ml-2 xl:ml-12 mt-8">
 						<IoMdCall size={35} color="gray" />
 						<span className="ml-8">+91 8929992732</span>
 					</div>
-					<div className="flex ml-12 mt-4">
+					<div className="flex ml-2 xl:ml-12 mt-4">
 						<FaSquareWhatsapp size={35} color="gray" />
 						<span className="ml-8">+91 8929992732 &nbsp;/ +91 9013009017</span>
 					</div>
 					<h1 className=" text-2xl p-2 ml-8 mt-8">Social Media</h1>
-					<div className="flex ml-12 mt-8">
+					<div className="flex ml-2 xl:ml-12 mt-8">
 						<FaSquareInstagram size={35} color="gray" />
 						<a
 							className="ml-8 hover:text-blue-500"
@@ -80,7 +80,7 @@ const Contact = () => {
 							https://www.instagram.com/akash97.yadav/
 						</a>
 					</div>
-					<div className="flex ml-12 mt-8">
+					<div className="flex ml-2 xl:ml-12 mt-8">
 						<BsTwitterX size={35} color="gray" />
 						<a
 							className="ml-8 hover:text-blue-500"

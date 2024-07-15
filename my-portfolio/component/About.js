@@ -20,10 +20,10 @@ const About = () => {
 	return (
 		<>
 			<h1 className="text-center text-6xl my-8">About Me</h1>
-			<div className="flex">
-				<div className="flex flex-col w-[50%]">
+			<div className="flex xl:flex-row flex-col">
+				<div className="flex flex-col w-full xl:w-[50%]">
 					<div className="grid grid-flow-row grid-cols-10 px-4 py-4 ring-1 p-2 rounded-xl hover:ring-gray-800 ring-gray-300 duration-300 my-4">
-						<h2 className=" text-2xl col-span-2 self-center">Frotent</h2>
+						<h2 className=" text-2xl col-span-10 xl:col-span-2 self-center">Frotent</h2>
 						<p className="grid grid-flow-row grid-cols-5 col-span-8 gap-5">
 							<RiNextjsFill size={65} />
 							<RiReactjsFill size={65} color="#6fc1f4" />
@@ -31,32 +31,32 @@ const About = () => {
 							<FaCss3 size={65} color="blue" />
 							<DiJqueryLogo size={65} color="#6fc1f4" />
 						</p>
-						<h2 className=" text-2xl col-span-2 self-center">Backend</h2>
-						<p className="grid grid-flow-row grid-cols-4 col-span-8 gap-5 my-4">
+						<h2 className=" text-2xl col-span-10 xl:col-span-2 self-center">Backend</h2>
+						<p className="grid grid-flow-row grid-cols-4 col-span-10 xl:col-span-8 gap-5 my-4">
 							<DiNodejs size={95} color="black" />
 							<SiExpress size={75} />
 						</p>
-						<h2 className=" text-2xl col-span-2 self-center">Database</h2>
+						<h2 className=" text-2xl col-span-10 xl:col-span-2 self-center">Database</h2>
 						<p className="grid grid-flow-row grid-cols-4 col-span-8 gap-5 my-4">
 							<DiMongodb size={75} color="green" />
 							<SiMysql size={75} />
 						</p>
-						<h2 className=" text-2xl col-span-3 self-center">Miscellaneous</h2>
+						<h2 className=" text-2xl col-span-10 xl:col-span-3 self-center">Miscellaneous</h2>
 						<p className="grid grid-flow-row grid-cols-4 col-span-7 gap-5 my-4">
 							<SiSocketdotio size={65} />
 							<FaDocker size={75} color="#6fc1f4" />
 							<FaGitSquare size={75} color="#db4c1f" />
 							<FaAws size={75} />
 						</p>
-						<h2 className=" text-2xl col-span-3 self-center">Frameworks</h2>
+						<h2 className=" text-2xl col-span-10 xl:col-span-3 self-center">Frameworks</h2>
 						<p className="grid grid-flow-row grid-cols-3 col-span-7 gap-5 my-4">
 							<SiExpress size={75} />
 							<RiTailwindCssFill size={75} color="#6fc1f4" />
 							<FaBootstrap size={75} color="purple" />
 						</p>
 					</div>
-					<div className="grid grid-flow-col grid-cols-10 px-4 ring-1 p-2 rounded-xl hover:ring-gray-800 ring-gray-300 duration-300">
-						<h2 className=" text-2xl col-span-2 self-center">Hobbies</h2>
+					<div className="grid grid-flow-row xl:grid-flow-col xl:grid-cols-10 px-4 ring-1 p-2 rounded-xl hover:ring-gray-800 ring-gray-300 duration-300">
+						<h2 className=" text-2xl col-span-10 xl:col-span-2 self-center justify-self-center mb-6 xl:mb-0">Hobbies</h2>
 						<p className="grid grid-flow-row grid-cols-2 col-span-8 gap-5">
 							<span className="text-lg bg-[#5ebaf3e4] text-white font-semibold rounded-xl p-2 px-1 text-center">
 								Photography
@@ -70,7 +70,7 @@ const About = () => {
 						</p>
 					</div>
 				</div>
-				<p className="w-[50%] px-8 py-2">
+				<p className="w-full xl:w-[50%] xl:px-8 py-2">
 					Hey,I'm a Mern Stack Developer with with a 2 years of experience in
 					this field. I have completed my graduation from Delhi University as
 					Bachelor's in Arts and after that i started learning kroean language
