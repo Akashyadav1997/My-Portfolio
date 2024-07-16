@@ -7,7 +7,7 @@ import { BsTwitterX } from "react-icons/bs";
 const Contact = () => {
 	return (
 		<>
-			<h1 className="text-6xl">Contact Us</h1>
+			<h1 className="text-6xl text-center">Contact Us</h1>
 			<div className="grid xl:grid-flow-col  xl:grid-cols-2 w-full mt-8">
 				<div className="shadow-2xl dark:shadow-white dark:bg-[#595757] w-4/5 flex flex-col items-center xl:items-end justify-self-center xl:justify-self-end rounded-xl">
 					<h1 className="my-4 text-2xl self-center">Contact Form</h1>
@@ -16,7 +16,7 @@ const Contact = () => {
 						<input
 							type="text"
 							placeholder="Enter Your Name"
-							className="ring-1 p-2 rounded-md my-2 w-4/5"
+							className="ring-1 p-2 rounded-md my-2 w-full lg:w-4/5"
 						/>
 					</div>
 					<div className="flex flex-col items-start w-4/5 my-2">
@@ -24,7 +24,7 @@ const Contact = () => {
 						<input
 							type="email"
 							placeholder="Enter Your Email"
-							className="ring-1 p-2 rounded-md my-2 w-4/5"
+							className="ring-1 p-2 rounded-md my-2 w-full lg:w-4/5"
 						/>
 					</div>
 					<div className="flex flex-col items-start w-4/5 my-2">
@@ -32,13 +32,13 @@ const Contact = () => {
 						<input
 							type="text"
 							placeholder="Enter Your Subject"
-							className="ring-1 p-2 rounded-md my-2 w-4/5"
+							className="ring-1 p-2 rounded-md my-2 w-full lg:w-4/5"
 						/>
 					</div>
 					<div className="flex flex-col items-start w-4/5 my-2">
 						<label className="mr-20">Message</label>
 						<textarea
-							className="w-4/5 ring-1 rounded p-3 my-2"
+							className="w-full lg:w-4/5 ring-1 rounded p-3 my-2"
 							rows={7}
 							placeholder="Enter Your Message"
 						></textarea>
@@ -67,7 +67,9 @@ const Contact = () => {
 					</div>
 					<div className="flex ml-2 xl:ml-12 mt-4">
 						<FaSquareWhatsapp size={35} color="gray" />
-						<span className="ml-8 text-sm xl:text-lg">+91 8929992732 &nbsp;/ +91 9013009017</span>
+						<span className="ml-8 text-sm xl:text-lg">
+							+91 8929992732 &nbsp;/ +91 9013009017
+						</span>
 					</div>
 					<h1 className=" text-2xl p-2 ml-8 mt-8">Social Media</h1>
 					<div className="flex ml-2 xl:ml-12 mt-8 items-center">

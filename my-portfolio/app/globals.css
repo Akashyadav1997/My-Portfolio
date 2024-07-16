@@ -2,3 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.textWhite:hover p {
+	color: white !important;
+	text: white !important;
+}
+.textBlue {
+	color: blue !important;
+	text: blue !important;
+}

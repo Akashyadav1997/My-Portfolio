@@ -22,7 +22,7 @@ const About = () => {
 			<h1 className="text-center text-6xl my-8">About Me</h1>
 			<div className="flex xl:flex-row flex-col">
 				<div className="flex flex-col w-full xl:w-[50%]">
-					<div className="grid grid-flow-row grid-cols-10 px-4 py-4 ring-1 p-2 rounded-xl hover:ring-gray-800 ring-gray-300 duration-300 my-4">
+					<div className="grid grid-flow-row grid-cols-10 px-4 py-4 ring-1 p-2 rounded-xl hover:ring-gray-800 ring-gray-300 duration-300 my-4 w-full">
 						<h2 className=" text-2xl col-span-10 xl:col-span-2 self-center my-4">
 							Frotend
 						</h2>

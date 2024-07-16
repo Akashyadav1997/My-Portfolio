@@ -18,6 +18,7 @@ import Contact from "./Contact";
 import { BsTwitterX } from "react-icons/bs";
 import Header from "./Header";
 import Link from "next/link";
+import { Formik } from "formik";
 
 const poppins = Poppins({
 	weight: ["300", "700"],
@@ -31,41 +32,33 @@ const HomePage = () => {
 	const [darkMode, setDarkMode] = useState(false);
 	const [projectData, setProjectData] = useState([
 		{
-			name: "My First Project",
-			image:
-				"https://www.skillvertex.com/blog/wp-content/uploads/2023/11/Data-Science-2024-01-03T114324.166-1.png",
-			type: "E-commerce",
-		},
-		// {
-		// 	name: "My Second Project",
-		// 	image:
-		// 		"https://nextjs-tailwindcss-portfolio.vercel.app/_next/image?url=%2Fimages%2Fweb-project-2.jpg&w=1920&q=75",
-		// 	type: "E-commerce",
-		// },
-		{
-			name: "My Third Project",
-			image:
-				"https://nextjs-tailwindcss-portfolio.vercel.app/_next/image?url=%2Fimages%2Fui-project-1.jpg&w=1920&q=75",
-			type: "E-commerce",
+			name: "Online Teaching Platoform",
+			description:
+				"MERN Stack Teaching Platform application with Next.js & Tailwind in Frontend and Node.js Express, mongodb with Scocket.io in Backend",
+			image: "/online-dashboard.png",
+			link: "https://teaching-platform-client-xi.vercel.app/",
 		},
 		{
-			name: "My Fourth Project",
-			image:
-				"https://nextjs-tailwindcss-portfolio.vercel.app/_next/image?url=%2Fimages%2Fui-project-2.jpg&w=1920&q=75",
-			type: "E-commerce",
+			name: "Chat App",
+			description:
+				"MERN Stack Chat Application application with Next.js & Tailwind in Frontend and Node.js Express, mongodb with Scocket.io in Backend",
+
+			image: "/chat-app.png",
+			link: "https://chat-app-full-stack.vercel.app/",
 		},
 		{
-			name: "My Fifth Project",
-			image:
-				"https://www.skillvertex.com/blog/wp-content/uploads/2023/11/Data-Science-2024-01-03T114324.166-1.png",
-			type: "E-commerce",
+			name: "TO-Do App",
+			description:
+				"to-do app with rect-redux to store the values of to-do list",
+			image: "/to-do.png",
+			link: "https://to-do-list-one-silk-81.vercel.app/",
 		},
-		// {
-		// 	name: "My Sixth Project",
-		// 	image:
-		// 		"https://www.skillvertex.com/blog/wp-content/uploads/2023/11/Data-Science-2024-01-03T114324.166-1.png",
-		// 	type: "E-commerce",
-		// },
+		{
+			name: "Grocery App",
+			description: "HTML CSS static page",
+			image: "/static-html.png",
+			link: "https://neon-pithivier-5393bb.netlify.app/",
+		},
 	]);
 	return (
 		<div
@@ -73,12 +66,14 @@ const HomePage = () => {
 		>
 			{showModal && (
 				<Modal setShowModal={setShowModal}>
+					<Formik></Formik>
 					<div className="flex flex-col  xl:w-[32rem]">
 						<label className="p-5 text-xl self-center">
 							What Project are Looking for ?{" "}
 						</label>
 						<input
 							type="text"
+							name="name"
 							placeholder="Your Name"
 							className="ring-1 ring-gray-600 p-2 rounded-lg mx-3 my-3"
 						/>
@@ -175,13 +170,13 @@ const HomePage = () => {
 					<div className="text-lg text-black z-10 absolute bottom-6 xl:bottom-12 sm:left-[9rem] xl:left-[16rem] flex flex-row justify-center items-center">
 						<CiSearch
 							size={45}
-							className=" mr-5"
+							className=" mr-1 lg:mr-5"
 							color={`${darkMode ? "white" : "black"}`}
 						/>
 						<input
 							type="text"
 							placeholder="Search Projects here"
-							className="p-3 ring-gray-400 rounded-lg ring-1"
+							className="p-1 lg:p-3 ring-gray-400 rounded-lg ring-1"
 						/>
 					</div>
 				</div>
@@ -197,7 +192,7 @@ const HomePage = () => {
 				</div>
 			</div>
 			<div
-				className="w-full flex flex-col pt-12 px-12 shadow-2xl py-4 pb-12 rounded-xl duration-1000 dark:rounded-none dark:text-white dark:bg-[#0d2438]"
+				className="w-full flex flex-col pt-12 px-3 xl:px-12 shadow-2xl py-4 pb-12 rounded-xl duration-1000 dark:rounded-none dark:text-white dark:bg-[#0d2438]"
 				id="about"
 			>
 				<About />
@@ -212,7 +207,9 @@ const HomePage = () => {
 			{/* footer  */}
 			<div className="w-full bg-[#0d2438] min-h-56 text-white text-xl flex items-center flex-col">
 				<div className="mt-4 text-4xl">Akash Yadav</div>
-				<div className="mt-4 text-center">This Portfolio has been designed by Using</div>
+				<div className="mt-4 text-center">
+					This Portfolio has been designed by Using
+				</div>
 				<div className="mt-4 text-center my-3">
 					Tailwind & Next.js for Frotend and Node.js, Express and MongoDB for
 					Backend.
