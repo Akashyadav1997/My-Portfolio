@@ -24,7 +24,7 @@ app.use(applicant);
 
 //deafult route
 app.use("/", (req, res, next) => {
-	res.send("Akash Yadav Portfolio Server side default Routes");
+	res.send("Akash Yadav Portfolio Server Side Default Route");
 });
 
 //handle all errors
