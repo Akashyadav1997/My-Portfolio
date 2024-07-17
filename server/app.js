@@ -8,7 +8,7 @@ const app = express();
 dotenv.config({
 	path: "./.env",
 });
-const port = process.env.PORT;
+const port = process.env.PORT || 8000
 const uri = process.env.MONGO_URI;
 // body parser
 app.use(express.json());
