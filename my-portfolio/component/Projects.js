@@ -32,7 +32,7 @@ const Projects = ({ data }) => {
 					<Link
 						target="_blank"
 						href={`${data.link}`}
-						className="textBlue underline font-bold flex justify-center"
+						className="textYellow underline font-bold flex justify-center"
 					>
 						Visit
 						<MdOutlineArrowOutward />

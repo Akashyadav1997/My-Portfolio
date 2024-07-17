@@ -91,7 +91,7 @@ const About = () => {
 							/>
 						</div>
 					</div>
-					<div className="grid grid-flow-row xl:grid-flow-col xl:grid-cols-10 px-4 ring-1 p-2 rounded-xl hover:ring-gray-800 ring-gray-300 duration-300">
+					<div className="grid grid-flow-row grid-row-10 xl:grid-flow-col items-center xl:grid-cols-10 px-4 ring-1 p-2 rounded-xl hover:ring-gray-800 ring-gray-300 duration-300">
 						<h2 className="text-2xl col-span-10 xl:col-span-2 self-center justify-self-center mb-6 xl:mb-0">
 							Hobbies
 						</h2>

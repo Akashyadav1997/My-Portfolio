@@ -19,6 +19,7 @@ import { BsTwitterX } from "react-icons/bs";
 import Header from "./Header";
 import Link from "next/link";
 import { Formik } from "formik";
+import HireMeForm from "./HireMeForm";
 
 const poppins = Poppins({
 	weight: ["300", "700"],
@@ -66,38 +67,7 @@ const HomePage = () => {
 		>
 			{showModal && (
 				<Modal setShowModal={setShowModal}>
-					<Formik></Formik>
-					<div className="flex flex-col  xl:w-[32rem]">
-						<label className="p-5 text-xl self-center">
-							What Project are Looking for ?{" "}
-						</label>
-						<input
-							type="text"
-							name="name"
-							placeholder="Your Name"
-							className="ring-1 ring-gray-600 p-2 rounded-lg mx-3 my-3"
-						/>
-						<input
-							type="email"
-							placeholder="Your Email"
-							className="ring-1 ring-gray-600 p-2 rounded-lg mx-3 my-3"
-						/>
-						<select className="ring-1 ring-gray-600 p-2 rounded-lg mx-3 my-3">
-							<option>What Type of Project Required ? </option>
-							<option>Web Development</option>
-							<option>App Development</option>
-							<option>Others</option>
-						</select>
-						<textarea
-							cols={5}
-							rows={5}
-							placeholder="Project Description"
-							className="ring-1 ring-gray-600 rounded-lg p-2 mx-3 my-2"
-						></textarea>
-						<button className="bg-blue-600 w-3/5 self-center p-2 rounded-lg text-white hover:bg-blue-800 duration-300">
-							Submit
-						</button>
-					</div>
+					<HireMeForm setShowModal={setShowModal} />
 				</Modal>
 			)}
 			{/* <Header/> */}
