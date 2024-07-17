@@ -6,6 +6,7 @@ import { toast } from "react-toastify";
 import { hireMeValidation } from "./Errorhandling";
 
 const HireMeForm = ({ setShowModal }) => {
+	console.log(process.env.SERVER_URL);
 	const [isLoading, setIsLoading] = useState(false);
 	const handleSubmit = async (e) => {
 		// e.preventDefault();

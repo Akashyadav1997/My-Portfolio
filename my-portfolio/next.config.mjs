@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	env:{
-		SERVER_URL:"http://localhost:8000"
+		SERVER_URL:"https://my-portfolio-server-vl7o.onrender.com/"
 	},
 	images: {
 		remotePatterns: [
