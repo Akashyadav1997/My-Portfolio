@@ -17,6 +17,9 @@ console.log(process.env.CLIENT_URL);
 app.use(
 	cors({
 		origin: process.env.CLIENT_URL,
+		methods: ["GET", "POST", "PUT", "DELETE"],
+		allowedHeaders: ["my-custom-header"],
+		credentials: true,
 	})
 );
 app.use(applicant);
