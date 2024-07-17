@@ -8,10 +8,12 @@ const app = express();
 dotenv.config({
 	path: "./.env",
 });
-const port = process.env.PORT || 8000
+const port = process.env.PORT || 8000;
 const uri = process.env.MONGO_URI;
 // body parser
 app.use(express.json());
+console.log("below is teh server url");
+console.log(process.env.CLIENT_URL);
 app.use(
 	cors({
 		origin: process.env.CLIENT_URL,
