@@ -152,7 +152,7 @@ const HomePage = () => {
 				</div>
 			</div>
 			<div
-				className="flex flex-col items-center w-full dark:bg-[#0d2438] py-12 duration-1000"
+				className="flex flex-col items-center w-full dark:bg-[#0d2438] pb-12 duration-1000"
 				id="my-projects"
 			>
 				<div className="grid xl:grid-cols-2 grid-cols-1 items-start gap-5 justify-items-center ">
