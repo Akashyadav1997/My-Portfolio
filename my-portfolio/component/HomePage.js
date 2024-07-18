@@ -178,6 +178,7 @@ const HomePage = () => {
 			<div className="w-full bg-[#0d2438] min-h-56 text-white text-xl flex items-center flex-col">
 				<div className="mt-4 text-4xl">Akash Yadav</div>
 				<div className="mt-4 text-center">
+				<div className="mb-2 text-sm text-center">© 2024 Akash Yadav. All rights reserved.</div>
 					This Portfolio has been designed by Using
 				</div>
 				<div className="mt-4 text-center my-3">
