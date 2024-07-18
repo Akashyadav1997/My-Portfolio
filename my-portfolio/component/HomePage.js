@@ -33,7 +33,7 @@ const HomePage = () => {
 	const [darkMode, setDarkMode] = useState(false);
 	const [projectData, setProjectData] = useState([
 		{
-			name: "Online Teaching Platoform",
+			name: "Online Teaching Platform",
 			description:
 				"MERN Stack Teaching Platform application with Next.js & Tailwind in Frontend and Node.js Express, mongodb with Scocket.io in Backend",
 			image: "/online-dashboard.png",
@@ -134,10 +134,10 @@ const HomePage = () => {
 					<div className="text-7xl dark:text-white text-black absolute bottom-44">
 						Portfolio
 					</div>
-					<div className="text-3xl dark:text-white text-black absolute text-center bottom-24  md:bottom-28">
+					{/* <div className="text-3xl dark:text-white text-black absolute text-center bottom-24  md:bottom-28">
 						Search projects by there title
-					</div>
-					<div className="text-lg text-black z-10 absolute bottom-6 xl:bottom-12 sm:left-[9rem] xl:left-[16rem] flex flex-row justify-center items-center">
+					</div> */}
+					<div className="text-lg text-black z-10 absolute bottom-6 xl:bottom-20 sm:left-[9rem] xl:left-[16rem] flex flex-row justify-center items-center">
 						<CiSearch
 							size={45}
 							className=" mr-1 lg:mr-5"
@@ -152,7 +152,7 @@ const HomePage = () => {
 				</div>
 			</div>
 			<div
-				className="flex flex-col items-center w-full dark:bg-[#0d2438] duration-1000"
+				className="flex flex-col items-center w-full dark:bg-[#0d2438] py-12 duration-1000"
 				id="my-projects"
 			>
 				<div className="grid xl:grid-cols-2 grid-cols-1 items-start gap-5 justify-items-center ">

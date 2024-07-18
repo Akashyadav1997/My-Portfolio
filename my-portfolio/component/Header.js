@@ -5,7 +5,7 @@ import { BsMoonStars } from "react-icons/bs";
 const Header = ({ setShowModal, darkMode, setDarkMode }) => {
 	return (
 		<>
-			<div className=" duration-1000 xl:px-16 flex dark:bg-[#0d2438]  p-4 dark:text-white xxl:justify-evenly justify-between items-center w-full">
+			<div className="duration-1000 xl:px-16 flex dark:bg-[#0d2438]  p-4 dark:text-white xxl:justify-evenly justify-between items-center w-full">
 				{/* name */}
 				<span
 					className={`cursor-pointer text-sm xl:text-2xl xl:flex-row flex-col flex`}
