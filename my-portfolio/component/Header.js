@@ -1,18 +1,23 @@
 "use client";
 import { FiSun } from "react-icons/fi";
 import { BsMoonStars } from "react-icons/bs";
-
+import { Cinzel_Decorative } from "next/font/google";
+export const cinzelDecorative = Cinzel_Decorative({
+	weight: [ "700", "900"],
+	subsets: ["latin"],
+	display: "swap",
+});
 const Header = ({ setShowModal, darkMode, setDarkMode }) => {
 	return (
 		<>
-			<div className="duration-1000 xl:px-16 flex dark:bg-[#0d2438]  p-4 dark:text-white xxl:justify-evenly justify-between items-center w-full">
+			<div className="duration-1000 xl:px-16 flex dark:bg-[#0d2438]  p-4 dark:text-white justify-between items-center w-full">
 				{/* name */}
 				<span
-					className={`cursor-pointer text-sm xl:text-2xl xl:flex-row flex-col flex`}
+					className={`cursor-pointer flex`}
 				>
-					<span className="font-bold">Akash</span>
-					
-					<span className="font-bold">Yadav</span>
+					<span className={`${cinzelDecorative.className} text-4xl lg:text-5xl`}>A</span>
+
+					<span className={`${cinzelDecorative.className} text-4xl lg:text-5xl`}>Y</span>
 				</span>
 				{/* routes */}
 				<div className="md:grid grid-flow-col space-x-8 mt-4 hidden ">
@@ -44,15 +49,14 @@ const Header = ({ setShowModal, darkMode, setDarkMode }) => {
 							className="bg-[#fff] rounded-lg p-3 hover:bg-[#f7e0e0] cursor-pointer duration-300"
 							size={60}
 							color="#183b57"
-							onClick={()=>setDarkMode(false)}
+							onClick={() => setDarkMode(false)}
 						/>
 					) : (
 						<BsMoonStars
 							className="bg-[#183b57] rounded-lg p-3 hover:bg-[#1c3143] cursor-pointer duration-300"
 							size={60}
 							color="white"
-							onClick={()=>setDarkMode(true)}
-
+							onClick={() => setDarkMode(true)}
 						/>
 					)}
 				</div>
