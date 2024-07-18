@@ -17,19 +17,13 @@ const uri = process.env.MONGO_URI;
 app.use(express.json());
 
 // CORS configuration
-const corsOptions = {
-  origin: process.env.CLIENT_URL, // Ensure this matches your Vercel client URL
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-  credentials: true,
-};
+app.use(
+  cors({
+    origin: process.env.CLIENT_URL,
+    credentials: true,
+  })
+);
 
-app.use(cors(corsOptions));
-
-// Enable pre-flight across all routes
-app.options('*', cors(corsOptions));
-
-// Routes
 app.use(applicant);
 
 // Default route
