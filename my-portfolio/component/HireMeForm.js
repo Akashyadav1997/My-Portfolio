@@ -12,7 +12,7 @@ const HireMeForm = ({ setShowModal }) => {
 		// e.preventDefault();
 		setIsLoading(true);
 		const url = process.env.SERVER_URL;
-		const response = await fetch(`${url}hireme`, {
+		const response = await fetch(`${url}/hireme`, {
 			headers: {
 				"Content-Type": "application/json",
 			},

@@ -18,7 +18,7 @@ const Contact = () => {
 		try {
 			setIsLoading(true);
 			console.log(e);
-			const response = await fetch(`${url}contact`, {
+			const response = await fetch(`${url}/contact`, {
 				headers: {
 					"Content-Type": "application/json",
 				},
