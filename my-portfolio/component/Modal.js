@@ -1,5 +1,5 @@
+'use client'
 import React from "react";
-
 const Modal = ({ setShowModal, children }) => {
 	const handleModalClick = (e) => {
 		e.stopPropagation(); // Prevent the click event from propagating to the parent div

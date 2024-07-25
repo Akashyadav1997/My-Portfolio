@@ -1,25 +1,21 @@
 "use client";
 import { Poppins } from "next/font/google";
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { BsTwitterX } from "react-icons/bs";
 import { CiSearch } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
-import { FaLinkedin, FaLocationDot, FaSquareInstagram } from "react-icons/fa6";
-import { FiSun } from "react-icons/fi";
+import { FaLinkedin, FaSquareInstagram } from "react-icons/fa6";
 import { RiDownloadCloudLine } from "react-icons/ri";
-import { MdEmail } from "react-icons/md";
-import { IoMdCall } from "react-icons/io";
+import About from "./About";
+import Contact from "./Contact";
+import Header from "./Header";
+import HireMeForm from "./HireMeForm";
 import Modal from "./Modal";
 import Projects from "./Projects";
-import About from "./About";
-import { FaSquareWhatsapp } from "react-icons/fa6";
-import Contact from "./Contact";
-import { BsTwitterX } from "react-icons/bs";
-import Header from "./Header";
-import Link from "next/link";
-import { Formik } from "formik";
-import HireMeForm from "./HireMeForm";
+import { motion } from "framer-motion";
 
 const poppins = Poppins({
 	weight: ["300", "700"],
@@ -62,7 +58,13 @@ const HomePage = () => {
 		},
 	]);
 	return (
-		<div
+		<motion.div
+			initial="hidden"
+			animate="visible"
+			variants={{
+				hidden: { opacity: 0 },
+				visible: { opacity: 1, transition: { duration: 2 } },
+			}}
 			className={`${poppins.className} w-full ${darkMode ? "dark" : "null"}`}
 		>
 			{showModal && (
@@ -178,7 +180,9 @@ const HomePage = () => {
 			<div className="w-full bg-[#0d2438] min-h-56 text-white text-xl flex items-center flex-col">
 				<div className="mt-4 text-4xl">Akash Yadav</div>
 				<div className="mt-4 text-center">
-				<div className="mb-2 text-sm text-center">© 2024 Akash Yadav. All rights reserved.</div>
+					<div className="mb-2 text-sm text-center">
+						© 2024 Akash Yadav. All rights reserved.
+					</div>
 					This Portfolio has been designed by Using
 				</div>
 				<div className="mt-4 text-center my-3">
@@ -201,7 +205,7 @@ const HomePage = () => {
 					</Link>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

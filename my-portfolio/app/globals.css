@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+	scroll-behavior: smooth;
+}
 .textWhite:hover p {
 	color: white !important;
 	text: white !important;
