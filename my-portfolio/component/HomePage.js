@@ -92,8 +92,8 @@ const HomePage = () => {
 							<p className="xl:self-end text-3xl my-5 text-center dark:text-gray-50 text-gray-600">
 								& Korean Language Expert{" "}
 							</p>
-							<a href="/akash-resume.pdf" download>
-								<button className="ring-1 ring-gray-500 my-6 px-10 dark:bg-white dark:text-black hover:ring-blue-600 xl:self-end hover:bg-blue-600 duration-300 flex items-center p-3 text-gray-600 rounded-lg hover:text-white">
+							<a href="/akash-resume.pdf" className="xl:self-end" download>
+								<button className="ring-1 ring-gray-500 my-6 px-10 dark:bg-white dark:text-black hover:ring-blue-600 hover:bg-blue-600 duration-300 flex items-center p-3 text-gray-600 rounded-lg hover:text-white">
 									<RiDownloadCloudLine
 										color="black"
 										className="mr-4"
@@ -133,22 +133,22 @@ const HomePage = () => {
 							/>
 						</div>
 					</div>
-					<div className="text-7xl dark:text-white text-black absolute bottom-44">
+					<div className="text-5xl md:text-7xl dark:text-white text-black absolute bottom-44">
 						Portfolio
 					</div>
 					{/* <div className="text-3xl dark:text-white text-black absolute text-center bottom-24  md:bottom-28">
 						Search projects by there title
 					</div> */}
-					<div className="text-lg text-black z-10 absolute bottom-6 xl:bottom-20 sm:left-[9rem] xl:left-[16rem] flex flex-row justify-center items-center">
+					<div className="text-lg text-black z-10 absolute bottom-16 xl:bottom-20 xl:left-[39%] flex flex-row justify-center items-center">
 						<CiSearch
 							size={45}
-							className=" mr-1 lg:mr-5"
+							className=" mr-1 lg:mr-5 hidden sm:inline"
 							color={`${darkMode ? "white" : "black"}`}
 						/>
 						<input
 							type="text"
 							placeholder="Search Projects here"
-							className="p-1 lg:p-3 ring-gray-400 rounded-lg ring-1"
+							className="p-3 ring-gray-400 rounded-lg ring-1"
 						/>
 					</div>
 				</div>
@@ -157,7 +157,7 @@ const HomePage = () => {
 				className="flex flex-col items-center w-full dark:bg-[#0d2438] pb-12 duration-1000"
 				id="my-projects"
 			>
-				<div className="grid xl:grid-cols-2 grid-cols-1 items-start gap-5 justify-items-center ">
+				<div className="grid xl:grid-cols-2 grid-cols-1 items-start gap-5 justify-items-center mx-2">
 					{projectData.map((item, index) => (
 						<Projects key={index} data={item} />
 					))}
