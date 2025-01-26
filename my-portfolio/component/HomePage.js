@@ -92,7 +92,7 @@ const HomePage = () => {
 							<p className="xl:self-end text-3xl my-5 text-center dark:text-gray-50 text-gray-600">
 								& Korean Language Expert{" "}
 							</p>
-							<a href="/akash-resume.pdf" className="xl:self-end" download>
+							<a href="/akash-yadav-resume.pdf" className="xl:self-end" download>
 								<button className="ring-1 ring-gray-500 my-6 px-10 dark:bg-white dark:text-black hover:ring-blue-600 hover:bg-blue-600 duration-300 flex items-center p-3 text-gray-600 rounded-lg hover:text-white">
 									<RiDownloadCloudLine
 										color="black"
