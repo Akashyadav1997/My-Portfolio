@@ -51,7 +51,7 @@ const Contact = () => {
 					onSubmit={handleSubmit}
 					validationSchema={contactValidation}
 				>
-					<Form className="shadow-2xl dark:shadow-white dark:bg-[#595757] w-11/12 mx-2 sm:w-4/5 flex flex-col items-center xl:items-end justify-self-center xl:justify-self-end rounded-xl">
+					<Form className="dark:shadow-white dark:bg-[#595757] w-11/12 mx-2 sm:w-4/5 flex flex-col items-center xl:items-end justify-self-center xl:justify-self-end rounded-xl">
 						<h1 className="my-4 text-2xl self-center">Contact Form</h1>
 						<div className="flex flex-col items-start w-4/5 my-2">
 							<label className="mr-20">Name</label>
