@@ -47,8 +47,8 @@ const HomePage = () => {
 			name: "TO-Do App",
 			description:
 				"to-do app with rect-redux to store the values of to-do list",
-			image: "/to-do.png",
-			link: "https://to-do-list-one-silk-81.vercel.app/",
+			image: "/image.png",
+			link: "https://todolist-mu-livid-87.vercel.app/",
 		},
 		{
 			name: "Grocery App",
