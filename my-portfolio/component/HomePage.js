@@ -46,7 +46,7 @@ const HomePage = () => {
 		{
 			name: "TO-Do App",
 			description:
-				"to-do app with rect-redux to store the values of to-do list",
+				"Developed a full-stack to-do application featuring user authentication (login/logout), task management (add, remove, complete tasks), dark mode, and a delete all functionality. Implemented the frontend using Next.js with Tailwind and Redux, and the backend with Node.js, Express, and MongoDB.",
 			image: "/image.png",
 			link: "https://todolist-mu-livid-87.vercel.app/",
 		},
@@ -92,7 +92,11 @@ const HomePage = () => {
 							<p className="xl:self-end text-3xl my-5 text-center dark:text-gray-50 text-gray-600">
 								& Korean Language Expert{" "}
 							</p>
-							<a href="/akash-yadav-resume.pdf" className="xl:self-end" download>
+							<a
+								href="/akash-yadav-resume.pdf"
+								className="xl:self-end"
+								download
+							>
 								<button className="ring-1 ring-gray-500 my-6 px-10 dark:bg-white dark:text-black hover:ring-blue-600 hover:bg-blue-600 duration-300 flex items-center p-3 text-gray-600 rounded-lg hover:text-white">
 									<RiDownloadCloudLine
 										color="black"
